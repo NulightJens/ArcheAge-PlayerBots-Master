@@ -48,8 +48,8 @@ def catalog():
     return result
 
 
-def git(*args, cwd=ROOT):
-    return run('git', '-C', str(cwd), *args)
+def git(*args, cwd=None):
+    return run('git', '-C', str(ROOT if cwd is None else cwd), *args)
 
 
 def pin(entry):
@@ -90,6 +90,16 @@ def ready(entry):
     if status != 'ready':
         raise ValueError(f'Run: python playerbots.py fetch {entry["id"]}')
     return inside(entry['path'])
+
+
+def fetch_source(entry):
+    key = f'submodule.{entry["id"]}.url'
+    urls = [git('config', '-f', '.gitmodules', '--get', key)]
+    # Local submodule URLs can override .gitmodules even in a clean checkout.
+    urls.extend(line.split('=', 1)[1] for line in git('config', '--local', '--list').splitlines()
+                if line.startswith(key + '='))
+    if any(url.removesuffix('.git') != entry['repository'] for url in urls):
+        raise ValueError(f'{entry["id"]}: submodule URL differs from the catalog.')
 
 
 def host_spec(entry):
@@ -173,11 +183,9 @@ def main():
                 selected = list(entries.values()) if args.all else [entry]
                 for item in selected:
                     state(item)
+                    fetch_source(item)
                 for item in selected:
                     path = item['path']
-                    configured = git('config', '-f', '.gitmodules', '--get', f'submodule.{item["id"]}.url')
-                    if configured.removesuffix('.git') != item['repository']:
-                        raise ValueError(f'{item["id"]}: submodule URL differs from the catalog.')
                     print(f'Fetching {item["id"]}...', flush=True)
                     git('submodule', 'update', '--init', '--recursive', '--checkout', '--', path)
                     ready(item)
