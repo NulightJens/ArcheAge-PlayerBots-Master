@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Navigation-Extractor
 
-Extract local navigation assets and export recorded route graphs.
+Extract navigation assets from your game data and export recorded route graphs.
 
 **Role:** Companion tool. **Status:** source preview. Requires your own matching game data; graph export alone does not prove a route is walkable.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Navigation-Extractor
 ```
 
-This companion is public. The master and most variants currently require owner-granted access.
+You can clone this companion publicly. You need access to the private master and most variants.
 
 ## Setup
 
-This is a supporting library or tool, not a standalone bot server. Commands below run from this repository directory. Use external directories for build output and runtime data.
+Run the commands below from this repository directory. Use Core to set up a bot server. Use external directories for build output and runtime data.
 
 ## Commands
 
@@ -29,6 +29,6 @@ dotnet build extractor/AAEmu.NavigationExtractor --artifacts-path ../artifacts/n
 ```
 Run the resulting `AAEmu.NavigationExtractor.dll --help` with `dotnet` for game archive extraction options. `graph <prebuilt-roads.json> <new-output.json>` exports a deterministic graph. Choose a new output filename: existing output is refused. Game assets and generated maps remain outside the repository.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

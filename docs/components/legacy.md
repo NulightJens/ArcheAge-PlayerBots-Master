@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Legacy
 
-Original overlay plus preserved loose-file revisions for AAEmu 1.2.
+Explore the original PlayerBots overlay and its historical revisions.
 
 **Role:** Historical reference. **Status:** source preview. Historical implementation; use Core for continued development.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Legacy
 ```
 
-This repository requires GitHub access from its owner.
+You need access to this private repository before cloning it.
 
 ## Setup
 
-Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. The server owner installs this module. From this repository directory:
+Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. Install this module on your server. From this repository directory:
 
 ```powershell
 git clone https://github.com/AAEmu/AAEmu ../AAEmu-Legacy
@@ -34,6 +34,6 @@ Use a new host directory for each installation. The installer verifies the host 
 
 Use `/bothelp` in game. The `original-overlay` branch retains the original overlay revision; `main` includes the recovered loose-file revisions. Use a separate host for comparison.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

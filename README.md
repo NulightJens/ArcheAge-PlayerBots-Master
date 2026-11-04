@@ -1,9 +1,8 @@
 # ArcheAge PlayerBots
 
-Server-controlled companions and autonomous characters for ArcheAge through AAEmu.
-This is the master workspace: one starting point, one recommended Core, and separately
-versioned variants and tools. **Start with Core for ArcheAge 1.2.** PvP is part of Core;
-Headless DM remains in Experiment.
+Add playerbot companions to your AAEmu server. Bring a saved character into the world,
+invite it to your party and give it orders. **Start with Core for ArcheAge 1.2.**
+Choose Experiment to explore additional bot AI and Headless DM. PvP stays in Core.
 
 **Current maturity: source preview.** The source builds and offline checks have passed.
 Full autonomous quest progression, live 50v50 and economic settlement remain in development.
@@ -11,9 +10,10 @@ Full autonomous quest progression, live 50v50 and economic settlement remain in 
 
 ## Start here
 
-The server owner installs PlayerBots. Players join that configured server with the
-matching client. Requirements: Git, Python 3.11+, .NET 10 SDK and your own matching
-ArcheAge client/data. The master and most variants require owner-granted GitHub access.
+To install PlayerBots on your server, you need Git, Python 3.11+, .NET 10 SDK
+and your own matching ArcheAge client/data. To play on an existing PlayerBots server,
+join with its matching client. You need GitHub access to clone the private master
+and most variants.
 
 ```powershell
 git clone https://github.com/NulightJens/ArcheAge-PlayerBots-Master.git
@@ -25,7 +25,6 @@ python playerbots.py guide core
 
 Next, follow the [server setup guide](docs/SETUP.md). Once the server is configured,
 `/bot` shows in-game help. [Bring in your first companion](docs/components/core.md#commands).
-All ordinary setup and control work through documented commands; an agent is optional.
 
 ## Choose a component
 
@@ -56,7 +55,4 @@ Keep the previous installation, configuration, data and evidence. The launcher r
 to replace edited or differently pinned checkouts.
 
 [Setup and troubleshooting](docs/SETUP.md) · [Status and roadmap](docs/STATUS.md) ·
-[Contributing](docs/CONTRIBUTING.md) · [Agent instructions](AGENTS.md) · [Licenses](LICENSE.md)
-
-Tests, detailed logs and generated evidence belong in a separate validation workspace.
-This repository contains the launcher, concise guides and pinned component references.
+[Contributing](docs/CONTRIBUTING.md) · [Licenses](LICENSE.md)

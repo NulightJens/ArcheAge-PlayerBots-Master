@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Legacy-Refined
 
-Historical refined overlay and offline Chronicle simulation.
+Explore the historical refined bots and run offline Chronicle simulations.
 
 **Role:** Historical reference. **Status:** source preview. Chronicle simulation is not native gameplay. Two historical import checks need unavailable macOS data exports.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Legacy-Refined
 ```
 
-This repository requires GitHub access from its owner.
+You need access to this private repository before cloning it.
 
 ## Setup
 
-Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. The server owner installs this module. From this repository directory:
+Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. Install this module on your server. From this repository directory:
 
 ```powershell
 git clone https://github.com/AAEmu/AAEmu ../AAEmu-Legacy-Refined
@@ -38,6 +38,6 @@ dotnet run --project overlay/extra/AAEmu.Bots.Chronicle.Cli --artifacts-path ../
 ```
 The CLI exposes `run`, `digest` and `world-from-exports`. Output defaults to `LocalAppData/ArcheAge/Chronicle`; pass `--out` for another external location.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

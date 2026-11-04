@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Experiment
 
-Broader translated AI and opt-in Headless DM on ArcheAge 1.2.
+Explore experimental bot AI and optional Headless DM memory on ArcheAge 1.2.
 
 **Role:** Research variant. **Status:** source preview. Native walking, manager integration and end-to-end gameplay still need work. Headless DM is bounded witnessed memory, not a general autonomous dungeon master.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Experiment
 ```
 
-This repository requires GitHub access from its owner.
+You need access to this private repository before cloning it.
 
 ## Setup
 
-Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. The server owner installs this module. From this repository directory:
+Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. Install this module on your server. From this repository directory:
 
 ```powershell
 git clone https://github.com/AAEmu/AAEmu ../AAEmu-Experiment
@@ -45,6 +45,6 @@ Replace `2` with an eligible offline character ID. Use the per-bot help for life
 
 Native asset helpers are in `apps/NativeAssets` and `apps/export_native_catalog.py`. The .NET helper needs `-p:AAEmuHost=<installed-experiment-host>`; the Python helper requires explicit external output and summary paths. Use their `--help` before exporting.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Economy
 
-Checks proposed exchanges against native observations.
+Check proposed exchanges against native observations. Native settlement is still in development.
 
 **Role:** Protocol prototype. **Status:** source preview. No native auction adapter or settlement implementation. An allowed result does not transfer items or money.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Economy
 ```
 
-This repository requires GitHub access from its owner.
+You need access to this private repository before cloning it.
 
 ## Setup
 
-This is a supporting library or tool, not a standalone bot server. Commands below run from this repository directory. Use external directories for build output and runtime data.
+Run the commands below from this repository directory. Use Core to set up a bot server. Use external directories for build output and runtime data.
 
 ## Commands
 
@@ -29,6 +29,6 @@ dotnet run --project cli/Economy.Cli.csproj --artifacts-path ../artifacts/econom
 ```
 Use `--help` in place of `check ...` for usage. JSON fields follow `AuctionExchangeRequest` and `AuctionExchangeObservation` in the source. The result reports `Allowed`, `Reason` and `Submitted=false`. Inputs and outputs belong outside the code repository.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

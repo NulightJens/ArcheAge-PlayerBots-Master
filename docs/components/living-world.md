@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Living-World
 
-Durable journals, witnessed memory and private recall.
+Record witnessed events and recall them through persistent, private bot memory.
 
 **Role:** Shared library. **Status:** source preview. Offline checks pass; real native observation, owner-only recall and restart/replay still need combined live acceptance.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Living-World
 ```
 
-This repository requires GitHub access from its owner.
+You need access to this private repository before cloning it.
 
 ## Setup
 
-This is a supporting library or tool, not a standalone bot server. Commands below run from this repository directory. Use external directories for build output and runtime data.
+Run the commands below from this repository directory. Use Core to set up a bot server. Use external directories for build output and runtime data.
 
 ## Commands
 
@@ -29,6 +29,6 @@ dotnet run --project cli/LivingWorld.Cli.csproj --artifacts-path ../artifacts/li
 ```
 Use `inspect <closed-journal-path> <realm>` to validate/count an existing journal, or `replay <closed-journal-path> <realm>` to print retained events. Both commands are read-only. Close the journal writer before inspecting it. Core and Experiment pin their own dependency revision; update those pins deliberately when library behavior changes.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

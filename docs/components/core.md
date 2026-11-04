@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Core
 
-Start here: ArcheAge 1.2 companions, movement, party commands and PvP.
+Add companions, party controls and experimental PvP to your ArcheAge 1.2 server.
 
 **Role:** Main product. **Status:** source preview. Full autonomous quest progression, live 50v50 and restart acceptance remain open.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Core
 ```
 
-This repository requires GitHub access from its owner.
+You need access to this private repository before cloning it.
 
 ## Setup
 
-Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. The server owner installs this module. From this repository directory:
+Requires Git, Python 3.11+, .NET 10 SDK and your own matching client/data. Install this module on your server. From this repository directory:
 
 ```powershell
 git clone https://github.com/AAEmu/AAEmu ../AAEmu-Core
@@ -48,6 +48,6 @@ PvP stays in Core. `/bot pvp` explains duels and the experimental field scenario
 
 `/botmemory status` and `/botmemory recall` expose witnessed memory. Configure `BotConfig.json` in the installed Game host; keep journal files outside source repositories. For fresh characters, configure an existing dedicated account with `AAEMU_PLAYERBOTS_ACCOUNT_ID`, then use `/createbot FreshNuian Nuian Female Abolisher 1 race-spawn`. Quest autonomy is experimental; keep `StuckTeleportEnabled` disabled for unassisted journey validation.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).

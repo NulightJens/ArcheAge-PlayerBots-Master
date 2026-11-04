@@ -1,9 +1,7 @@
 # Status and next work
 
-Reviewed 2026-11-04. This page distinguishes available source from proven gameplay.
-The October 26 publication completed the eleven-repository cleanup, installers, command
-entry points and external evidence records. The master adds one starting point and
-consistent human guides. Repository organization is complete; the gameplay vision is ongoing.
+Reviewed 2026-11-04. Start with Core for your ArcheAge 1.2 server. Use the table below
+to compare the available features and their current limits before choosing a variant.
 
 ## Current maturity
 

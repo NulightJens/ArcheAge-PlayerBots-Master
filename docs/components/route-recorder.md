@@ -1,6 +1,6 @@
 # ArcheAge PlayerBots Route-Recorder
 
-Record roads, junctions, landmarks and optional photographs.
+Record roads, junctions, landmarks and photographs as you play.
 
 **Role:** Companion tool. **Status:** source preview. A route recording supplies navigation evidence; it does not prove bot traversal.
 
@@ -15,11 +15,11 @@ git clone --recurse-submodules https://github.com/NulightJens/ArcheAge-PlayerBot
 cd ArcheAge-PlayerBots-Route-Recorder
 ```
 
-This companion is public. The master and most variants currently require owner-granted access.
+You can clone this companion publicly. You need access to the private master and most variants.
 
 ## Setup
 
-This is a supporting library or tool, not a standalone bot server. Commands below run from this repository directory. Use external directories for build output and runtime data.
+Run the commands below from this repository directory. Use Core to set up a bot server. Use external directories for build output and runtime data.
 
 ## Commands
 
@@ -31,6 +31,6 @@ Use the window's **Help** and **Server setup** controls. `Ctrl+Alt+R` starts/sto
 
 `scripts/route-recorder/Build-PlayerRouteRecorder.ps1 -OutputPath <external-path>` builds the application. `scripts/New-StandaloneRouteRecorder.ps1 -OutputDirectory <new-external-folder>` packages a committed revision.
 
-## Development
+## Contributing
 
-See [AGENTS.md](../../AGENTS.md) for contributor and agent rules. Tests and detailed logs are retained in a separate validation workspace. Preserve the supplied license files and attribution.
+[Read the contribution guide](https://github.com/NulightJens/ArcheAge-PlayerBots-Master/blob/main/docs/CONTRIBUTING.md).
