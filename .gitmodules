@@ -1,0 +1,33 @@
+[submodule "core"]
+	path = core
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Core.git
+[submodule "experiment"]
+	path = variants/experiment
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Experiment.git
+[submodule "3-0"]
+	path = variants/3-0
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-3-0.git
+[submodule "10x"]
+	path = variants/10x
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-10x.git
+[submodule "legacy"]
+	path = variants/legacy
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Legacy.git
+[submodule "legacy-refined"]
+	path = variants/legacy-refined
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Legacy-Refined.git
+[submodule "living-world"]
+	path = libraries/living-world
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Living-World.git
+[submodule "economy"]
+	path = libraries/economy
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Economy.git
+[submodule "route-recorder"]
+	path = tools/route-recorder
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Route-Recorder.git
+[submodule "client-autopilot"]
+	path = tools/client-autopilot
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Client-Autopilot.git
+[submodule "navigation-extractor"]
+	path = tools/navigation-extractor
+	url = https://github.com/NulightJens/ArcheAge-PlayerBots-Navigation-Extractor.git

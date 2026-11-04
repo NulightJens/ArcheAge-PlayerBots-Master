@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+*.log
+*.jsonl
+.env
+artifacts/
+tests/
+validation/
+TestResults/
